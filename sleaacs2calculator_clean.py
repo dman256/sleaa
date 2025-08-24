@@ -13,11 +13,11 @@ except ImportError:
 
 # Configuration - ADD YOUR API KEYS HERE
 API_KEYS = {
-    'skinport': 'https://api.skinport.com/v1/1yyZcZaK+wbk4IrTL4AJzGtdBQkyyBlGe1xzVYdXBQFDGl2wKsyD3T6GQgxhTOvaKxCr4qg8ygQ2dlMwoQfmWg==',  # Get from https://skinport.com/api
-    'csfloat': 'GET https://csfloat.com/api/v1/listings',   # Get from https://csfloat.com/api
+    'skinport': None,  # Get from https://skinport.com/api
+    'csfloat': None,   # Get from https://csfloat.com/api
     'steam': None,     # Steam Web API key from https://steamcommunity.com/dev/apikey
     'bitskins': None,  # BitSkins API key
-    'dmarket': 'b0b1c37dfe17c26d1208b474e13096371195c61ee0bdc5ea82a0f33c5879e6fb'    # DMarket API key
+    'dmarket': None    # DMarket API key
 }
 
 skins = [
@@ -1636,4 +1636,5 @@ if __name__ == "__main__":
     except Exception as e:
         print(f"❌ Startup error: {e}")
         print("🚀 Falling back to automatic monitoring...")
+
         main()
